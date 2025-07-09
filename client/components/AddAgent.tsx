@@ -5,6 +5,19 @@ const AddAgent: React.FC = () => {
   const [agentName, setAgentName] = useState("");
   const [description, setDescription] = useState("");
   const [systemPrompt, setSystemPrompt] = useState("");
+  const [selectedModel, setSelectedModel] = useState("GPT-4o (Recommended)");
+  const [isModelDropdownOpen, setIsModelDropdownOpen] = useState(false);
+
+  const aiModels = [
+    "GPT-4o (Recommended)",
+    "GPT-4 Turbo",
+    "GPT-4",
+    "GPT-3.5 Turbo",
+    "Claude 3.5 Sonnet",
+    "Claude 3 Opus",
+    "Gemini Pro 1.5",
+    "Llama 3.1 405B",
+  ];
 
   return (
     <div className="min-h-screen bg-white">
