@@ -99,11 +99,63 @@ const AddAgent: React.FC = () => {
                   AI Model
                 </label>
                 <div className="relative">
-                  <div className="w-full h-10 border border-gray-border rounded-[10px] bg-white px-4 flex items-center">
+                  <button
+                    onClick={() => setIsModelDropdownOpen(!isModelDropdownOpen)}
+                    className="w-full h-10 border border-gray-border rounded-[10px] bg-white px-4 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  >
                     <span className="text-xl font-montserrat text-black">
-                      GPT-4o (Recommended)
+                      {selectedModel}
                     </span>
-                  </div>
+                    <svg
+                      className={`w-5 h-5 text-gray-500 transition-transform ${
+                        isModelDropdownOpen ? "rotate-180" : ""
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
+
+                  {isModelDropdownOpen && (
+                    <div className="absolute z-10 w-full mt-1 bg-white border border-gray-border rounded-[10px] shadow-lg max-h-60 overflow-y-auto">
+                      {aiModels.map((model) => (
+                        <button
+                          key={model}
+                          onClick={() => {
+                            setSelectedModel(model);
+                            setIsModelDropdownOpen(false);
+                          }}
+                          className={`w-full px-4 py-3 text-left hover:bg-gray-50 transition-colors flex items-center justify-between ${
+                            selectedModel === model ? "bg-blue-50" : ""
+                          }`}
+                        >
+                          <span className="text-base font-montserrat text-black">
+                            {model}
+                          </span>
+                          {selectedModel === model && (
+                            <svg
+                              className="w-4 h-4 text-blue-600"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
+                          )}
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </div>
                 <p className="text-base font-roboto text-black mt-2 max-w-[410px] leading-relaxed">
                   Choosing a more advanced model can improve performance.
