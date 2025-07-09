@@ -34,7 +34,16 @@ const AddAgent: React.FC = () => {
 
       {/* Main Content */}
       <div className="px-4 md:px-15 py-8 max-w-7xl mx-auto">
-        <h2 className="text-[32px] font-bold font-montserrat text-black mb-12">
+        <h2 className="text-[32px] font-bold font-montserrat text-black mb-12 flex items-center gap-4">
+          <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl shadow-lg">
+            <svg
+              className="w-7 h-7 text-white"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.89 1 3 1.89 3 3V21C3 22.11 3.89 23 5 23H11V21H5V3H13V9H21ZM14 10V12H12V10H14ZM16 10V12H14V10H16ZM16 8V10H14V8H16ZM14 8V6H16V8H14ZM19 14.5V13H17.5C17.1 13 16.7 13.4 16.7 13.8L16.4 15.7C16.2 15.9 16.1 16.1 15.9 16.2L14 15.5C13.6 15.3 13.2 15.5 13 15.9L12.5 16.8C12.3 17.2 12.5 17.6 12.9 17.8L14.8 18.5C14.8 18.7 14.8 18.9 14.8 19.1S14.8 19.5 14.8 19.7L12.9 20.4C12.5 20.6 12.3 21 12.5 21.4L13 22.3C13.2 22.7 13.6 22.9 14 22.7L15.9 22C16.1 22.1 16.2 22.3 16.4 22.5L16.7 24.4C16.7 24.8 17.1 25.2 17.5 25.2H19C19.4 25.2 19.8 24.8 19.8 24.4L20.1 22.5C20.3 22.3 20.4 22.1 20.6 22L22.5 22.7C22.9 22.9 23.3 22.7 23.5 22.3L24 21.4C24.2 21 24 20.6 23.6 20.4L21.7 19.7C21.7 19.5 21.7 19.3 21.7 19.1S21.7 18.7 21.7 18.5L23.6 17.8C24 17.6 24.2 17.2 24 16.8L23.5 15.9C23.3 15.5 22.9 15.3 22.5 15.5L20.6 16.2C20.4 16.1 20.3 15.9 20.1 15.7L19.8 13.8C19.8 13.4 19.4 13 19 13H19V14.5ZM18.5 19.1C18.5 19.9 17.9 20.5 17.1 20.5S15.7 19.9 15.7 19.1 16.3 17.7 17.1 17.7 18.5 18.3 18.5 19.1Z" />
+            </svg>
+          </div>
           Create New Agent
         </h2>
 
