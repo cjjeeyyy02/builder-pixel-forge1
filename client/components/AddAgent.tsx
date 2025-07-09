@@ -259,7 +259,20 @@ const AddAgent: React.FC = () => {
 
             {/* Add Prompt Segment Button */}
             <div className="flex justify-center">
-              <button className="w-[373px] h-[34px] border border-coral rounded-[5px] bg-white flex items-center justify-center hover:bg-gray-50 transition-colors">
+              <button className="w-[373px] h-[34px] border border-coral rounded-[5px] bg-white flex items-center justify-center gap-2 hover:bg-gray-50 transition-colors">
+                <div className="flex items-center justify-center w-5 h-5 bg-coral rounded-full">
+                  <svg
+                    className="w-3 h-3 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
                 <span className="text-base font-roboto text-black">
                   Add Prompt Segment
                 </span>
