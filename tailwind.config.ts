@@ -13,6 +13,12 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        lora: ["Lora", "serif"],
+        "open-sans": ["Open Sans", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +63,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Design system colors from Figma
+        "gray-border": "#D9D9D9",
+        "gray-border-dark": "#B7B6B6",
+        "temperature-blue": "#576DFB",
+        "temperature-green": "#5EFF40",
+        coral: "#FF8673",
+        "success-green": "#20DE3A",
       },
       borderRadius: {
         lg: "var(--radius)",
