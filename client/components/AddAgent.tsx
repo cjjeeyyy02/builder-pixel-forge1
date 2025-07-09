@@ -34,7 +34,7 @@ const AddAgent: React.FC = () => {
 
       {/* Main Content */}
       <div className="px-4 md:px-15 py-8 max-w-7xl mx-auto">
-        <h2 className="text-[32px] font-bold font-montserrat text-black mb-12 flex items-center gap-4">
+        <h2 className="text-[28px] font-bold font-montserrat text-black mb-12 flex items-center gap-4">
           <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl shadow-lg">
             <svg
               className="w-7 h-7 text-white"
