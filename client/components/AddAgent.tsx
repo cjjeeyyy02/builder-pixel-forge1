@@ -108,9 +108,6 @@ const AddAgent: React.FC = () => {
                       className="h-full bg-temperature-green rounded-[10px] transition-all duration-200"
                       style={{ width: `${(temperature / 1.0) * 75.5}%` }}
                     />
-                    <div className="absolute right-1 top-1/2 transform -translate-y-1/2">
-                      <div className="w-[18px] h-4 bg-temperature-green rounded-full" />
-                    </div>
                   </div>
                   <input
                     type="range"
